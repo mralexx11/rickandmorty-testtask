@@ -9,6 +9,7 @@ import {MatCardModule} from "@angular/material/card";
 import { RicknmortyComponent } from './ricknmorty/ricknmorty.component';
 import { RicknmortyService} from "./services/ricknmorty.service";
 import {HttpClientModule} from "@angular/common/http";
+import {MatPaginatorModule} from "@angular/material/paginator";
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import {HttpClientModule} from "@angular/common/http";
     AppRoutingModule,
     BrowserAnimationsModule,
     MatCardModule,
-    HttpClientModule
+    HttpClientModule,
+    MatPaginatorModule
   ],
   providers: [RicknmortyService],
   bootstrap: [AppComponent]
